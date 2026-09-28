@@ -11,7 +11,7 @@ The goal is to predict the medical insurance charge for a person from demographi
 
 ## Dataset
 
-The project uses a medical insurance table with **1,137 records** and 7 columns. The file name expected by the notebook is `insurance_dataset.csv`. That CSV was not included with the submitted notebooks, so it is not in this repository yet.
+The project uses a medical insurance table with **1,137 records** and 7 columns. The file is `notebooks/insurance_dataset.csv`.
 
 Exploration of that file found:
 
@@ -84,7 +84,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Put `insurance_dataset.csv` in `notebooks/`, next to `Final_Project_Insurance_dataset.ipynb`. Start Jupyter from that folder and run the notebook from top to bottom. It writes the test split, the preprocessing objects, and `trained_model.keras` into the same folder:
+`notebooks/insurance_dataset.csv` is already next to `Final_Project_Insurance_dataset.ipynb`. Start Jupyter from the `notebooks` folder and run that notebook from top to bottom. It writes the test split, the preprocessing objects, and `trained_model.keras` into the same folder:
 
 - `X_test.pkl`, `y_test.pkl`
 - `scaler.pkl`, `numerical_imputer.pkl`, `categorical_imputer.pkl`, `medians.pkl`
@@ -99,6 +99,7 @@ Then run `notebooks/Project_Test.ipynb` in that same folder. It loads those file
 ## Repository layout
 
 ```
+notebooks/insurance_dataset.csv
 notebooks/Final_Project_Insurance_dataset.ipynb
 notebooks/Project_Test.ipynb
 notebooks/Real_data_Test.ipynb
